@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lighten&#47;Darken Color</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="heading">Lighten&#47;Darken Color</h1>
+      <div class="input-color-box">
+        <label id="input-color-label" for="input-color"
+          >Color &#40;Hex&#41;</label
+        >
+        <input
+          placeholder="eg. #de5254"
+          id="input-color"
+          class="user-input-color"
+        />
+      </div>
+      <div class="custom-toggle-button">
+        <span>Lighten</span>
+        <button class="btn btn-off">
+          <div class="moving-ball"></div>
+        </button>
+        <span>Darken</span>
+      </div>
+      <div class="range-box">
+        <label id="percentage-label" for="percentage">35&percnt;</label>
+        <input
+          type="range"
+          id="percentage"
+          class="range"
+          value="35"
+          min="0"
+          max="100"
+        />
+      </div>
+      <div class="display-input-box">
+        <p>Input Color</p>
+        <div class="display-input-color"></div>
+      </div>
+      <div class="display-altered-box">
+        <p class="altered-color-text">
+          Altered Color <span class="altered-color-hex">#d78d80</span>
+        </p>
+        <div class="display-altered-color"></div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2021
+        <a class="link" href="https://www.github.com/purnimakumarr"
+          >Purnima Kumar</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
