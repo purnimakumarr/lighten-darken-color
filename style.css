@@ -1,0 +1,167 @@
+:root {
+  --primary-color: #c9daea;
+  --text-color: #2e282a;
+  --secondary-color: #cb769e;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+
+  background-color: var(--secondary-color);
+  font-family: lato, sans-serif;
+  color: #333;
+}
+
+main {
+  background-color: var(--primary-color);
+  margin-top: 4.8rem;
+  padding: 2.4rem 9.6rem;
+}
+
+.heading {
+  font-weight: 900;
+  text-align: center;
+  color: var(--text-color);
+
+  margin-bottom: 3.2rem;
+  font-size: 5.6rem;
+}
+
+/* Input Color*/
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 2px 5px #ec9192;
+}
+
+.input-color-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  margin-bottom: 2.4rem;
+}
+
+.user-input-color {
+  padding: 1.6rem 0.8rem;
+}
+
+.user-input-color::placeholder {
+  font-family: inherit;
+  color: #777;
+}
+
+/* Custom Toggle button */
+.custom-toggle-button {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  margin-bottom: 2.4rem;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  width: 7rem;
+  height: 3.2rem;
+  border-radius: 10rem;
+
+  transition: all 0.4s;
+}
+
+.btn .moving-ball {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #fff;
+  border-radius: 50%;
+
+  transition: all 0.4s;
+}
+
+.btn-off {
+  background-color: #868e96;
+}
+
+.btn-on {
+  background-color: #339af0;
+}
+
+.btn-on .moving-ball {
+  transform: translateX(3.4rem);
+}
+
+/* Range */
+.range-box {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+  font-weight: 700;
+  gap: 1.2rem;
+
+  margin-bottom: 2.4rem;
+}
+
+.range {
+  align-self: start;
+}
+
+/* Display */
+.display-input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+.display-input-color {
+  padding: 3.2rem 1.6rem;
+  background-color: #bc412b;
+}
+
+.display-altered-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.display-altered-color {
+  padding: 3.2rem 1.6rem;
+  background-color: #d78d80;
+}
+
+/* Footer */
+.link:link,
+.link:active {
+  color: inherit;
+}
+
+footer {
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+  color: #333;
+}
