@@ -4,6 +4,10 @@
   --secondary-color: #cb769e;
 }
 
+/**********************/
+/* GENERAL STYLES */
+/**********************/
+
 * {
   margin: 0;
   border: 0;
@@ -15,20 +19,17 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4.8rem;
-
   background-color: var(--secondary-color);
   font-family: lato, sans-serif;
   color: #333;
+  padding: 0 3.2rem;
 }
 
 main {
+  max-width: 80rem;
   background-color: var(--primary-color);
-  margin-top: 4.8rem;
   padding: 2.4rem 9.6rem;
+  margin: 4.8rem auto;
 }
 
 .heading {
@@ -40,11 +41,13 @@ main {
   font-size: 5.6rem;
 }
 
-/* Input Color*/
+/**********************/
+/* INPUT */
+/**********************/
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 2px 5px #ec9192;
+  box-shadow: 0 0 0 3px #fff;
 }
 
 .input-color-box {
@@ -59,6 +62,7 @@ main {
 
 .user-input-color {
   padding: 1.6rem 0.8rem;
+  background-color: #eee;
 }
 
 .user-input-color::placeholder {
@@ -66,7 +70,10 @@ main {
   color: #777;
 }
 
-/* Custom Toggle button */
+/**********************/
+/* CUSTOM TOGGLE BUTTON */
+/**********************/
+
 .custom-toggle-button {
   display: flex;
   gap: 1.2rem;
@@ -81,8 +88,8 @@ main {
 .btn {
   border: none;
   cursor: pointer;
-  width: 7rem;
-  height: 3.2rem;
+  min-width: 7rem;
+  min-height: 3.2rem;
   border-radius: 10rem;
 
   transition: all 0.4s;
@@ -109,7 +116,10 @@ main {
   transform: translateX(3.4rem);
 }
 
-/* Range */
+/**********************/
+/* RANGE */
+/**********************/
+
 .range-box {
   display: flex;
   flex-direction: column;
@@ -124,7 +134,10 @@ main {
   align-self: start;
 }
 
-/* Display */
+/**********************/
+/* DISPLAY */
+/**********************/
+
 .display-input-box {
   display: flex;
   flex-direction: column;
@@ -154,14 +167,66 @@ main {
   background-color: #d78d80;
 }
 
-/* Footer */
-.link:link,
-.link:active {
+/**********************/
+/* FOOTER */
+/**********************/
+
+.gtihub-link:link,
+.gtihub-link:active {
+  color: inherit;
+}
+
+.github-link:hover,
+.github-link:visited {
   color: inherit;
 }
 
 footer {
+  text-align: center;
   font-size: 1.8rem;
   margin-bottom: 2.4rem;
   color: #333;
+}
+
+/**********************/
+/* MEDIA QUERIES */
+/**********************/
+
+/* width: 656px or below */
+@media (max-width: 41em) {
+  .heading {
+    font-size: 3.2rem;
+  }
+}
+
+/* width: 472px or below */
+@media (max-width: 30em) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .btn {
+    padding-left: 0.5rem;
+  }
+}
+
+@media (max-width: 19em) {
+  .heading {
+    font-size: 2.4rem;
+  }
+
+  .input-color-box,
+  .range-box,
+  .display-box,
+  .custom-toggle-btn {
+    font-size: 1.6rem;
+  }
+
+  .user-input-color::placeholder {
+    font-size: 1.4rem;
+  }
+
+  .footer {
+    font-size: 1.4rem;
+  }
 }
