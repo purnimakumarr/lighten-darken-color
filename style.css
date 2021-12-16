@@ -171,8 +171,8 @@ main {
 /* FOOTER */
 /**********************/
 
-.gtihub-link:link,
-.gtihub-link:active {
+.github-link:link,
+.github-link:active {
   color: #222;
 }
 
