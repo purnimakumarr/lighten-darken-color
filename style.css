@@ -150,7 +150,7 @@ main {
 
 .display-input-color {
   padding: 3.2rem 1.6rem;
-  background-color: #bc412b;
+  background-color: #de5254;
 }
 
 .display-altered-box {
@@ -164,7 +164,7 @@ main {
 
 .display-altered-color {
   padding: 3.2rem 1.6rem;
-  background-color: #d78d80;
+  background-color: #ffabad;
 }
 
 /**********************/
@@ -173,19 +173,19 @@ main {
 
 .gtihub-link:link,
 .gtihub-link:active {
-  color: inherit;
+  color: #222;
 }
 
 .github-link:hover,
 .github-link:visited {
-  color: inherit;
+  color: #222;
 }
 
 footer {
   text-align: center;
   font-size: 1.8rem;
   margin-bottom: 2.4rem;
-  color: #333;
+  color: #222;
 }
 
 /**********************/
