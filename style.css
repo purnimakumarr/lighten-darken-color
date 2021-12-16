@@ -172,12 +172,12 @@ main {
 /**********************/
 
 .github-link:link,
-.github-link:active {
+.github-link:visited {
   color: #222;
 }
 
 .github-link:hover,
-.github-link:visited {
+.github-link:active {
   color: #222;
 }
 
