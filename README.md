@@ -1,3 +1,3 @@
 # Lighten/Darken Color
 
-Let's user generate lighter and/or darker shade of a color.
+Lets a user generate lighter and/or darker shade of a color.
